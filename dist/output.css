@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.hello h5 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hello h5:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #57ACDC;
+}
+
+.hello h5:nth-child(2) {
+  color: #57ACDC;
+  -webkit-animation: skills 4s ease-in-out infinite;
+          animation: skills 4s ease-in-out infinite;
+}
+
+.word1{
+  -webkit-animation: word1 3s linear infinite;
+          animation: word1 3s linear infinite;
+}
+
+@-webkit-keyframes Word1 {
+  0% {
+    display: inline-block;
+  }
+
+  25% {
+    display: inline-block;
+  }
+
+  30% {
+    display: none;
+  }
+}
+
+@keyframes Word1 {
+  0% {
+    display: inline-block;
+  }
+
+  25% {
+    display: inline-block;
+  }
+
+  30% {
+    display: none;
+  }
+}
+
+@-webkit-keyframes Word2 {
+  25% {
+    display: none;
+  }
+
+  30% {
+    display: inline-block;
+  }
+
+  55% {
+    display: inline-block;
+  }
+
+  65% {
+    display: none;
+  }
+}
+
+@keyframes Word2 {
+  25% {
+    display: none;
+  }
+
+  30% {
+    display: inline-block;
+  }
+
+  55% {
+    display: inline-block;
+  }
+
+  65% {
+    display: none;
+  }
+}
+
+@-webkit-keyframes Word3 {
+  65% {
+    display: none;
+  }
+
+  70% {
+    display: inline-block;
+  }
+
+  90% {
+    display: inline-block;
+  }
+
+  100% {
+    display: none;
+  }
+}
+
+@keyframes Word3 {
+  65% {
+    display: none;
+  }
+
+  70% {
+    display: inline-block;
+  }
+
+  90% {
+    display: inline-block;
+  }
+
+  100% {
+    display: none;
+  }
+}
