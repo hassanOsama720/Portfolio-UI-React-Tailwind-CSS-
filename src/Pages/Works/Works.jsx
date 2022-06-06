@@ -44,13 +44,13 @@ function Works() {
             return(
                 <div className="group relative cursor-pointer drop-shadow-2xl dark:drop-shadow-3xl h-fit flex items-center flex-col w-[80%] md:w-[45%] lg:w-[30%] ">
                     <div className="img group-hover:scale-110  transition-all duration-500">
-                        <img className='group-hover:grayscale group-hover:blur-sm transition-all duration-500' src={`http://localhost:8080/Images/project/${work.image}`} alt="" />
+                        <img className='group-hover:grayscale group-hover:blur-sm transition-all duration-500' src={`https://hassan-osama.herokuapp.com/Images/project/${work.image}`} alt="" />
                     </div>
                     <div className="info group-hover:h-[60%] overflow-hidden flex flex-col left-[0] w-0 absolute top-[30%] group-hover:w-full transition-all duration-500">
                     <p className=' font-bold text-center  text-4xl text-main'>{work.name}</p>
                     <div className="click w-full flex justify-evenly mt-2">
                     <button class="rounded-full bg-secondary p-2 w-[40%] text-white border-2 border-secondary hover:bg-white hover:text-secondary font-bold transition-all"
-                        onClick={()=>{setShowPop(true);setPopData(`http://localhost:8080/Images/project/${work.bigImage}`)}}
+                        onClick={()=>{setShowPop(true);setPopData(`https://hassan-osama.herokuapp.com/Images/project/${work.bigImage}`)}}
                     >Show</button>
                     <button class="rounded-full bg-secondary p-2 w-[40%] text-white border-2 border-secondary hover:bg-white hover:text-secondary font-bold transition-all"
                         onClick={()=>{window.open(work.url,'_blank')}}
