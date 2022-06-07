@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import pre from '../../assets/images/ShipShop-App.png'
-import show from '../../assets/images/shipshop1.png'
 import CloseIcon from '@mui/icons-material/Close';
 import axios from 'axios'
+import AccountTreeIcon from '@mui/icons-material/AccountTree';
 
 function Works() {
     const [showPop,setShowPop] = useState(false)
@@ -35,8 +34,10 @@ function Works() {
             <img src={popData} alt="" />
         </div>
 
-        <div className="title w-[80%] h-[10%] flex justify-center font-extrabold text-main animate-colorChange text-4xl">
+        <div className="title w-[80%] h-[10%] flex justify-center gap-10 font-extrabold text-main animate-colorChange text-4xl">
+            <AccountTreeIcon></AccountTreeIcon>
             <h1>Projects</h1>
+            <AccountTreeIcon></AccountTreeIcon>
         </div>
 
 
@@ -61,10 +62,7 @@ function Works() {
             )
         }) :
             <div className="group relative cursor-pointer h-fit flex items-center flex-col w-[30%] ">
-                <div className="img group-hover:scale-110  transition-all duration-500">
-                    <img className='group-hover:grayscale group-hover:blur-sm transition-all duration-500' src={pre} alt="" />
-                </div>
-                <div className="info group-hover:h-[60%] overflow-hidden flex flex-col left-[0] w-0 absolute top-[30%] group-hover:w-full transition-all duration-500">
+                <div className="info group-hover:h-[60%] overflow-hidden flex flex-col left-[0]  absolute top-[30%] w-full transition-all duration-500">
                     <p className=' font-bold text-center  text-4xl text-main'>Loading</p>
                 </div>
             </div> 

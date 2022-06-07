@@ -8,7 +8,7 @@ import SquareFootIcon from '@mui/icons-material/SquareFoot';
 
 
 function Skills() {
-    const [cliecked,setClicked] = useState("")
+    const [cliecked,setClicked] = useState("Frontend")
     const [opened,setOpened] = useState(false)
     const [frontSkills,setFrontSkills] = useState()
     const [backSkills,setBackSkills] = useState()
@@ -20,6 +20,7 @@ function Skills() {
          axios.get('https://hassan-osama.herokuapp.com/skills/Frontend')
             .then((result)=>{
                 setFrontSkills(result.data)
+                setDataSkills(result.data)
             })
             .catch((err)=>{
                 console.log(err)
@@ -39,7 +40,7 @@ function Skills() {
                 console.log(err)
             })
     }
-    useEffect(()=> GetData() ,[])
+    useEffect(()=> GetData()  ,[])
 
 
     function selectSide(value){
@@ -91,20 +92,20 @@ function Skills() {
             </div>
         </div>
 
-        <div className={` cursor-default skills w-[80%] h-[80%] overflow-y-auto transition-all duration-1000  relative flex flex-wrap items-center justify-center gap-20 p-10 `}>
+        <div className={` cursor-default skills w-[80%] h-[80%] overflow-y-auto transition-all duration-1000  relative flex flex-wrap items-center justify-center gap-10 md:gap-20 p-10 `}>
             {dataSkills ? dataSkills.map((skill)=>{
                 return(
-                    <div className={`${opened ? "animate-dragon" : ""} w-[30%] z-10 lg:w-[10%] h-[22%] dark:drop-shadow-3xl drop-shadow-2xl bg-white border-2 dark:border-main hover:scale-150 hover:bg-Dark_bg hover:text-white hover:border-back dark:hover:border-back hover:animate-pulse  rounded-full flex justify-center items-center relative`}
+                    <div className={`${opened ? "animate-dragon" : ""} w-[40%] md:w-[30%] z-10 lg:w-[10%] h-[16%] md:h-[22%] dark:drop-shadow-3xl drop-shadow-2xl bg-white border-2 dark:border-main hover:scale-150 hover:bg-Dark_bg hover:text-white hover:border-back dark:hover:border-back hover:animate-pulse  rounded-full flex justify-center items-center relative`}
                         onAnimationEnd={()=>{setOpened(false)}}>
                         {/* <img src={`http://localhost:8080/Images/skill/${skill.image}`} alt="" /> */}
-                        <h5 className='animate-letters text-lg font-bold'>{skill.name}</h5>
+                        <h5 className='animate-letters lg:text-lg md:text-2xl font-bold'>{skill.name}</h5>
                     </div>
                 )
             }) : 
             <div className='w-[20%] h-[20%] animate-skills relative'>
-                <div class="border-solid dark:border-r-white border-r-slate-400 border-r-8 scale-[900%] z-10 absolute left-[-15%] top-[40%] border-y-transparent border-y-8 border-l-0"></div>
-                <div className={`w-full  h-full dark:drop-shadow-3xl drop-shadow-2xl dark:bg-white bg-slate-400  border-2 dark:border-main rounded-r-full flex justify-center items-center relative`}>       
-                    <h5 className='dark:animate-letters  text-2xl text-main font-bold'>Skills</h5>
+                {/* <div class="border-solid dark:border-r-white border-r-slate-400 border-r-8 scale-[900%] z-10 absolute left-[-15%] top-[40%] border-y-transparent border-y-8 border-l-0"></div> */}
+                <div className={`w-full  h-full dark:drop-shadow-3xl drop-shadow-2xl dark:bg-white bg-slate-400  border-2 dark:border-main rounded-full flex justify-center items-center relative`}>       
+                    <h5 className='dark:animate-letters  text-2xl text-main font-bold'>Loading ...</h5>
                 </div>
             </div>
             }
