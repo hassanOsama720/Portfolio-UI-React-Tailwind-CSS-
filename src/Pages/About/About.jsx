@@ -51,7 +51,7 @@ function About() {
             <span className='text-main font-semibold'> MERN | MEAN-STACK </span> to develop and implement solutions tomeet business needs.</p>
         <div className="more w-full mt-10 flex gap-6 items-center">
           <a class="rounded-full bg-secondary p-2 w-[30%] text-center text-white border-2 border-secondary hover:bg-white hover:text-secondary font-bold transition-all" href='#contact'>Contact Me</a>
-          <a href='https://drive.google.com/file/d/1JgH2Y-MPVlNWi0F1XmGQCpiZpciumQn1/view?usp=sharing' target={'_blank'} className='text-main animate-letters drop-shadow-3xl font-bold hover:drop-shadow-3xl hover:text-back'>Download CV</a>
+          <a href='https://drive.google.com/file/d/1xUN-pmLdmfCziL3ABz_DatQSbFjWoVto/view?usp=sharing' target={'_blank'} className='text-main animate-letters drop-shadow-3xl font-bold hover:drop-shadow-3xl hover:text-back'>Download CV</a>
         </div>    
       </div>
 
