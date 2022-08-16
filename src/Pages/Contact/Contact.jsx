@@ -74,7 +74,7 @@ function Contact() {
                     <AlternateEmailIcon fontSize='large' className='group-hover:hidden transition-all duration-500'></AlternateEmailIcon>
                 </div>
                 <div className="animate-bounce hover:animate-none card group w-[80%] lg:w-[13%] md:w-[20%] md:h-[50%] lgh-[90%] hover:lg:w-[25%] transition-all duration-500 rounded-full border-2 border-main drop-shadow-3xl bg-white flex justify-center items-center">
-                    <a href='https://drive.google.com/file/d/1JgH2Y-MPVlNWi0F1XmGQCpiZpciumQn1/view?usp=sharing' target={'_blank'} className='text-main w-0 hidden overflow-hidden group-hover:w-fit group-hover:inline-block animate-letters drop-shadow-3xl font-bold hover:drop-shadow-3xl hover:text-back'>Download CV</a>
+                    <a href='https://drive.google.com/file/d/1xUN-pmLdmfCziL3ABz_DatQSbFjWoVto/view?usp=sharing' target={'_blank'} className='text-main w-0 hidden overflow-hidden group-hover:w-fit group-hover:inline-block animate-letters drop-shadow-3xl font-bold hover:drop-shadow-3xl hover:text-back'>Download CV</a>
                     <ArticleIcon fontSize='large' className='group-hover:hidden transition-all duration-500'></ArticleIcon>
                 </div>
             </div>
